@@ -1,0 +1,12 @@
+\\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\TestCases\bin\Debug\TestCases.dll
+\\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\TestCases\bin\Debug\TestCases.pdb
+\\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\TestCases\bin\Debug\AutomationFramework.exe
+\\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\TestCases\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+\\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\TestCases\bin\Debug\WebDriver.dll
+\\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\TestCases\bin\Debug\AutomationFramework.pdb
+\\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\TestCases\bin\Debug\WebDriver.xml
+\\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\TestCases\bin\Debug\ja\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+\\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\TestCases\obj\Debug\TestCases.csprojResolveAssemblyReference.cache
+\\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\TestCases\obj\Debug\TestCases.dll
+\\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\TestCases\obj\Debug\TestCases.pdb
+\\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\TestCases\bin\Debug\RelevantCodes.ExtentReports.dll

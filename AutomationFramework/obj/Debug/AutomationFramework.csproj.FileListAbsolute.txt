@@ -1,0 +1,11 @@
+\\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\AutomationFramework\bin\Debug\AutomationFramework.exe.config
+\\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\AutomationFramework\bin\Debug\AutomationFramework.exe
+\\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\AutomationFramework\bin\Debug\AutomationFramework.pdb
+\\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\AutomationFramework\bin\Debug\WebDriver.dll
+\\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\AutomationFramework\bin\Debug\WebDriver.Support.dll
+\\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\AutomationFramework\bin\Debug\WebDriver.xml
+\\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\AutomationFramework\bin\Debug\WebDriver.Support.xml
+\\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\AutomationFramework\obj\Debug\AutomationFramework.csprojResolveAssemblyReference.cache
+\\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\AutomationFramework\obj\Debug\AutomationFramework.exe
+\\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\AutomationFramework\obj\Debug\AutomationFramework.pdb
+\\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\AutomationFramework\bin\Debug\RelevantCodes.ExtentReports.dll
