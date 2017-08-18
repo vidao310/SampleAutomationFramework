@@ -13,59 +13,56 @@ namespace AutomationFramework
 {
     public static class Action
     {
-        public static void Click(IWebElement element)
+        public static void Click(By element)
         {
             try
             {
-                Console.Write("Clicking element " + element.ToString());
-                element.Click();
+                Logger.logInfo("Click element " + element.ToString());
+                Browser.driver.FindElement(element).Click();
             }
             catch (Exception e)
             {
-                Console.Write("Error when trying to click element " + element.ToString() + ". Exception detail: " + e);
+                Logger.logError("Error when trying to click element " + element.ToString() + ". Exception detail: " + e);
             }
         }
 
-        public static void DoubleClick(IWebElement element)
+        public static void DoubleClick(By element)
         {
             try
             {
-                Console.Write("Double-Clicking element " + element.ToString());
-                new Actions(Browser.driver).DoubleClick(element).Perform();
+                Logger.logInfo("Double-Click element " + element.ToString());
+                new Actions(Browser.driver).DoubleClick(Browser.driver.FindElement(element)).Perform();
             }
             catch (Exception e)
             {
-                Console.Write("Error when trying to double-click element " + element.ToString() + ". Exception detail: " + e);
+                Logger.logError("Error when trying to double-click element " + element.ToString() + ". Exception detail: " + e);
             }
         }
 
-        public static void SetText(IWebElement element, string text)
+        public static void SetText(By element, string text)
         {
             try
             {
-                Console.Write("Setting text at "  + element.ToString() + "value: "+ text);
-                element.SendKeys(text);
+                Logger.logInfo("Set text at "  + element.ToString() + "value: "+ text);
+                Browser.driver.FindElement(element).SendKeys(text);
             }
             catch (Exception e)
             {
-                Console.Write("Error when trying to set text at " + element.ToString() + ". Exception detail: " + e);
+                Logger.logError("Error when trying to set text at " + element.ToString() + ". Exception detail: " + e);
             }
         }
 
-        public static void ClearText(IWebElement element)
+        public static void ClearText(By element)
         {
             try
             {
-                Console.Write("Clearing text for element " + element.ToString());
-                element.Clear();
+                Logger.logInfo("Clear text for element " + element.ToString());
+                Browser.driver.FindElement(element).Clear();
             }
             catch (Exception e)
             {
-                Console.Write("Error when trying to clear text at " + element.ToString() + ". Exception detail: " + e);
+                Logger.logError("Error when trying to clear text at " + element.ToString() + ". Exception detail: " + e);
             }
         }
-
-  
-
     }
 }

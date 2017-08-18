@@ -9,3 +9,16 @@
 \\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\AutomationFramework\obj\Debug\AutomationFramework.exe
 \\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\AutomationFramework\obj\Debug\AutomationFramework.pdb
 \\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\AutomationFramework\bin\Debug\RelevantCodes.ExtentReports.dll
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\AutomationFramework\bin\Debug\AutomationFramework.exe.config
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\AutomationFramework\obj\Debug\AutomationFramework.exe
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\AutomationFramework\obj\Debug\AutomationFramework.pdb
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\AutomationFramework\bin\Debug\AutomationFramework.exe
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\AutomationFramework\bin\Debug\AutomationFramework.pdb
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\AutomationFramework\bin\Debug\RelevantCodes.ExtentReports.dll
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\AutomationFramework\bin\Debug\WebDriver.dll
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\AutomationFramework\bin\Debug\WebDriver.Support.dll
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\AutomationFramework\bin\Debug\WebDriver.xml
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\AutomationFramework\bin\Debug\WebDriver.Support.xml
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\AutomationFramework\obj\Debug\AutomationFramework.csprojResolveAssemblyReference.cache
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\AutomationFramework\bin\Debug\nunit.framework.dll
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\AutomationFramework\bin\Debug\nunit.framework.xml

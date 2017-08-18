@@ -10,3 +10,16 @@
 \\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\TestCases\obj\Debug\TestCases.dll
 \\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\TestCases\obj\Debug\TestCases.pdb
 \\mac\home\documents\visual studio 2015\Projects\DotNetAutomation\TestCases\bin\Debug\RelevantCodes.ExtentReports.dll
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\TestCases\bin\Debug\TestCases.dll
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\TestCases\bin\Debug\TestCases.pdb
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\TestCases\bin\Debug\AutomationFramework.exe
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\TestCases\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\TestCases\bin\Debug\nunit.framework.dll
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\TestCases\bin\Debug\RelevantCodes.ExtentReports.dll
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\TestCases\bin\Debug\AutomationFramework.pdb
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\TestCases\bin\Debug\nunit.framework.xml
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\TestCases\bin\Debug\WebDriver.xml
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\TestCases\bin\Debug\ja\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\TestCases\obj\Debug\TestCases.csprojResolveAssemblyReference.cache
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\TestCases\obj\Debug\TestCases.dll
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\TestCases\obj\Debug\TestCases.pdb

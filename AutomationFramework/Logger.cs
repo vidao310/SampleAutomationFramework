@@ -17,7 +17,13 @@ namespace AutomationFramework
         public static ExtentTest testUnit;
         public static void CreateNewReport()
         {
-            mainReport = new ExtentReports(@".\SampleTestReport.html");
+            mainReport = new ExtentReports(@"C:\temp\SampleTestReport.html");
+            Console.WriteLine("mainReport path is at" + mainReport.ToString());
+        }
+
+        public static void FinishAllTests()
+        {
+            mainReport.Close();
         }
 
         public static void StartNewTestCase(string TestName)
@@ -30,6 +36,7 @@ namespace AutomationFramework
             LogStatus currentStatus = testUnit.GetCurrentStatus();
             testUnit.Log(currentStatus, "Finish Test Case with status: " + currentStatus.ToString());
             mainReport.EndTest(testUnit);
+            mainReport.Flush();
         }
 
         public static void logInfo (string logDetail, bool attachScreenshot = false)
