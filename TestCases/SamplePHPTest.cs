@@ -27,6 +27,7 @@ namespace TestCases
         {
             Logger.StartNewTestCase("Test Search for Eval");
             PHP_HomePage.SearchFor("eval");
+            Logger.logSreenshot("SampleScreenshot");
             ValidateUrl.UrlEqual("http://php.net/manual/en/function.eval.php");
             ValidateElement.Exist(PHP_DocumentPage.Caution_label);
             Logger.FinishTestCase();

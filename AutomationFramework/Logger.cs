@@ -42,7 +42,7 @@ namespace AutomationFramework
         public static void logInfo (string logDetail, bool attachScreenshot = false)
         {
             testUnit.Log(LogStatus.Info, logDetail);
-            if (attachScreenshot) { takeScreenshot(); }
+            if (attachScreenshot) { logSreenshot(); }
 #if DEBUG
             Console.WriteLine("INFO: " + logDetail);
 #endif
@@ -51,7 +51,7 @@ namespace AutomationFramework
         public static void logPass(string logDetail, bool attachScreenshot = false)
         {
             testUnit.Log(LogStatus.Pass, logDetail);
-            if (attachScreenshot) { takeScreenshot(); }
+            if (attachScreenshot) { logSreenshot(); }
 #if DEBUG
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("PASS: " + logDetail);
@@ -62,7 +62,7 @@ namespace AutomationFramework
         public static void logWarning(string logDetail, bool attachScreenshot = false)
         {
             testUnit.Log(LogStatus.Warning, logDetail);
-            if (attachScreenshot) { takeScreenshot(); }
+            if (attachScreenshot) { logSreenshot(); }
 #if DEBUG
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("WARNING: " + logDetail);
@@ -73,7 +73,7 @@ namespace AutomationFramework
         public static void logError (string logDetail, bool attachScreenshot = true)
         {
             testUnit.Log(LogStatus.Error, logDetail);
-            if(attachScreenshot) { takeScreenshot();  }
+            if(attachScreenshot) { logSreenshot();  }
 #if DEBUG
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("ERROR: " + logDetail);
@@ -84,7 +84,7 @@ namespace AutomationFramework
         public static void logFail(string logDetail, bool attachScreenshot = true)
         {
             testUnit.Log(LogStatus.Fail, logDetail);
-            if (attachScreenshot) { takeScreenshot(); }
+            if (attachScreenshot) { logSreenshot(); }
 #if DEBUG
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("FAIL: " + logDetail);
@@ -95,7 +95,7 @@ namespace AutomationFramework
         public static void logSkip(string logDetail, bool attachScreenshot = false)
         {
             testUnit.Log(LogStatus.Skip, logDetail);
-            if (attachScreenshot) { takeScreenshot(); }
+            if (attachScreenshot) { logSreenshot(); }
 #if DEBUG
             Console.ForegroundColor = ConsoleColor.Blue;
             Console.WriteLine("SKIP: " + logDetail);
@@ -103,10 +103,16 @@ namespace AutomationFramework
 #endif
         }
 
-        public static string takeScreenshot()
+        public static void logSreenshot(string screenshotName = "screen")
         {
-            var filename = System.DateTime.Today.ToLongTimeString();
-            string path = @".\Screenshots\screen"+filename+".png";
+            var screenshotPath = takeScreenshot(screenshotName);
+            testUnit.Log(LogStatus.Info, testUnit.AddScreenCapture(@screenshotPath));
+        }
+
+        private static string takeScreenshot(string screenshotName = "screen")
+        {
+            var filename = screenshotName+System.DateTime.Now.ToString("yyyyMMddHHmmss");
+            string path = @"C:\temp\Screenshots\"+filename+".png";
             Screenshot screenshot = ((ITakesScreenshot)Browser.driver).GetScreenshot();
             screenshot.SaveAsFile(path, ScreenshotImageFormat.Png);
             return path;
