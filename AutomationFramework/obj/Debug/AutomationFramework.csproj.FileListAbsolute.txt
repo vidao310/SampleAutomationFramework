@@ -22,3 +22,6 @@ Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\AutomationFramework\bi
 Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\AutomationFramework\obj\Debug\AutomationFramework.csprojResolveAssemblyReference.cache
 Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\AutomationFramework\bin\Debug\nunit.framework.dll
 Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\AutomationFramework\bin\Debug\nunit.framework.xml
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\AutomationFramework\bin\Debug\Newtonsoft.Json.dll
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\AutomationFramework\bin\Debug\saucerest-net.dll
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\AutomationFramework\bin\Debug\Newtonsoft.Json.xml

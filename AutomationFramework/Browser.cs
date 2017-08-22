@@ -12,6 +12,7 @@ using OpenQA.Selenium.Firefox;
 using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.IE;
 using OpenQA.Selenium.Safari;
+using OpenQA.Selenium.Remote;
 
 namespace AutomationFramework
 {
@@ -22,7 +23,27 @@ namespace AutomationFramework
         /// <param name="browserName">chrome, firefox, ie, edge, safari</param>
         public static void OpenNewBrowser(string browserName = "chrome")
         {
-            if (browserName == "firefox") { driver = new FirefoxDriver(); }
+            if (browserName == "remote")
+            {
+                string seleniumHub = "http://ondemand.saucelabs.com:80/wd/hub";
+
+                DesiredCapabilities caps = new DesiredCapabilities();
+
+                caps.SetCapability(CapabilityType.BrowserName, "chrome");
+                caps.SetCapability(CapabilityType.Version, "58");
+                caps.SetCapability(CapabilityType.Platform, "Windows 8");
+
+                caps.SetCapability("username", "USERNAME***");
+                caps.SetCapability("accessKey", "KEY*****");
+                caps.SetCapability("name", "Sample Selenium Test in SauceLab");
+
+                driver = new RemoteWebDriver(new Uri(seleniumHub), caps);
+                Logger.AddSystemInfo("Platform", caps.Platform.PlatformType.ToString() + caps.Platform.MajorVersion.ToString());
+                Logger.AddSystemInfo("Browser", caps.BrowserName);
+                Logger.AddSystemInfo("Browser Version", caps.Version);
+                Logger.AddSystemInfo("RemoteRun", "SauceLabs");    
+            }
+            else if (browserName == "firefox") { driver = new FirefoxDriver(); }
             else if (browserName == "edge") { driver = new EdgeDriver(); }
             else if (browserName == "ie") { driver = new InternetExplorerDriver(); }
             else if (browserName == "safari") { driver = new SafariDriver(); }

@@ -8,6 +8,9 @@ using RelevantCodes.ExtentReports;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support;
 using OpenQA.Selenium.Interactions;
+using OpenQA.Selenium.Remote;
+using saucelabs.saucerest;
+using NUnit.Framework;
 
 namespace AutomationFramework
 {
@@ -15,14 +18,30 @@ namespace AutomationFramework
     {
         public static ExtentReports mainReport;
         public static ExtentTest testUnit;
+        public static SauceREST sauce;
+        public static bool HasFailTest = false;
         public static void CreateNewReport()
         {
             mainReport = new ExtentReports(@"C:\temp\SampleTestReport.html");
             Console.WriteLine("mainReport path is at" + mainReport.ToString());
+            sauce = new SauceREST("USERNAME***", "KEY*****"); //TODO refactor 
+        }
+
+        public static void AddSystemInfo(string param, string value)
+        {
+            mainReport.AddSystemInfo(param, value);
         }
 
         public static void FinishAllTests()
         {
+            var session = ((RemoteWebDriver)Browser.driver).SessionId.ToString();
+            if (TestContext.CurrentContext.Result.Outcome.Status == NUnit.Framework.Interfaces.TestStatus.Passed)
+                sauce.updateJobInfo(session, new Dictionary<string, object> { { "passed", true } });
+            else
+                sauce.updateJobInfo(session, new Dictionary<string, object> { { "passed", false } });
+
+            Browser.CloseBroswer();
+            Browser.driver.Quit();
             mainReport.Close();
         }
 

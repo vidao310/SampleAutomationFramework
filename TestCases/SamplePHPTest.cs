@@ -17,7 +17,7 @@ namespace TestCases
         public void Test_GoTo_PHPNet()
         {
             Logger.StartNewTestCase("Test PHP site");
-            Browser.OpenNewBrowser();
+            Browser.OpenNewBrowser("remote");
             Browser.GoToURL("http://php.net");
             Logger.FinishTestCase();
         }
@@ -36,7 +36,6 @@ namespace TestCases
         [OneTimeTearDown]
         public void FinalCleanUp()
         {
-            Browser.CloseBroswer();
             Logger.FinishAllTests();
         }
     }

@@ -23,3 +23,6 @@ Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\TestCases\bin\Debug\ja
 Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\TestCases\obj\Debug\TestCases.csprojResolveAssemblyReference.cache
 Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\TestCases\obj\Debug\TestCases.dll
 Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\TestCases\obj\Debug\TestCases.pdb
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\TestCases\bin\Debug\saucerest-net.dll
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\TestCases\bin\Debug\Newtonsoft.Json.dll
+Y:\Documents\Visual Studio 2015\Projects\DotNetAutomation\TestCases\bin\Debug\Newtonsoft.Json.xml
